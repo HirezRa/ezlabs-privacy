@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מדיניות פרטיות — תחזית סוף השבוע</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f3f7;
+      color: #222;
+      line-height: 1.7;
+      padding: 24px;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    }
+    h1 { color: #17406b; font-size: 22px; margin-bottom: 8px; }
+    .updated { color: #666; font-size: 13px; margin-bottom: 20px; }
+    h2 { color: #17406b; font-size: 16px; margin: 18px 0 8px; }
+    p, li { font-size: 14px; }
+    ul { margin: 8px 20px 0; }
+    a { color: #1565c0; }
+    .note {
+      margin-top: 20px;
+      padding: 12px;
+      background: #e8f5e9;
+      border-radius: 8px;
+      border-inline-start: 4px solid #4caf50;
+      font-size: 13px;
+    }
+    .warn {
+      margin-top: 16px;
+      padding: 12px;
+      background: #fff8e1;
+      border-radius: 8px;
+      border-inline-start: 4px solid #f9a825;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>מדיניות פרטיות</h1>
+    <p class="updated">עודכן לאחרונה: 11 בנובמבר 2026 · «תחזית סוף השבוע» גרסה 2.3.0 · מפרסם: EZLabs.dev</p>
+
+    <p>מדיניות זו חלה על התוסף והאפליקציה «תחזית סוף השבוע» (תוסף Chrome ואפליקציית Android).</p>
+
+    <h2>מה התוסף והאפליקציה אוספים</h2>
+    <ul>
+      <li><strong>מיקום GPS</strong> — רק אם בחרתם «המיקום שלי» ואישרתם הסכמה. הקואורדינטות נשמרות מקומית במכשיר.</li>
+      <li><strong>מיקום לפי IP</strong> — אם ה־GPS נכשל, ייתכן שימוש ב־<a href="https://ipapi.co/" target="_blank" rel="noopener noreferrer">ipapi.co</a> (HTTPS בלבד) לקבלת מיקום משוער.</li>
+      <li><strong>תחזית מזג אוויר</strong> — נשלחות קואורדינטות ל־<a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> לקבלת תחזית. אין חשבון משתמש אצלנו.</li>
+      <li><strong>הגדרות, מועדפים ורשימת מנחתים</strong> — נשמרים במכשיר בלבד (ראו פירוט לפי פלטפורמה למטה).</li>
+      <li><strong>קישורים חיצוניים</strong> — כפתור מפות פותח את
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Google Maps</a>
+        עם קואורדינטות שנבחרו (בחלון חדש / בדפדפן, עם noopener). קישורי METAR/TAF מובילים לפורטל הרשמי של השירות המטאורולוגי (IMS) ולא מעבירים מיקום אוטומטית.</li>
+    </ul>
+
+    <h2>תקופות שמירה</h2>
+    <ul>
+      <li><strong>מטמון תחזיות</strong> — עד 24 שעות מקומית; רשומות ישנות נמחקות אוטומטית (ולכל היותר כ־40 מיקומים).</li>
+      <li><strong>מיקום אחרון והעדפות</strong> — עד שתמחקו אותם בהגדרות, תמשכו את הסכמת הפרטיות, או תסירו את התוסף / תתקינו מחדש את האפליקציה לפי העניין.</li>
+      <li><strong>ייבוא מקומי</strong> — קובצי XML/CSV של מנחתים נקראים במכשיר בלבד ואינם מועלים לשרת.</li>
+    </ul>
+
+    <h2>מה התוסף והאפליקציה לא עושים</h2>
+    <ul>
+      <li>אין יצירת חשבון או התחברות</li>
+      <li>אין מכירת נתונים לצד שלישי</li>
+      <li>אין מעקב פרסומי</li>
+    </ul>
+    <p>במסך הראשי מוצג METAR/TAF של השדה הקרוב. לשם כך נשלח ל־aviationweather.gov (שירות מזג האוויר התעופתי של ארה״ב) רק קוד ה־ICAO של התחנה, למשל LLBG, ולא הקואורדינטות שלכם.</p>
+    <p>במסך עריכת המנחתים מוצגת מפה. אריחי המפה נטענים מ־OpenStreetMap (מפה) ומ־Esri (לוויין), ולכן השירותים האלה רואים איזה אזור מוצג במפה. לא נשלח אליהם מידע אחר.</p>
+
+    <h2>תוסף Chrome בלבד</h2>
+    <ul>
+      <li>הגדרות, מועדפים, מטמון ומקום אחרון נשמרים ב־chrome.storage.local במכשיר בלבד.</li>
+      <li>ניתן לנקות מטמון, מיקום או את כל הנתונים דרך <strong>הגדרות ← ניהול נתונים</strong>. ניקוי מלא (ללא שמירת הגדרות) מאפס גם את גרסת הסכמת הפרטיות — בפעם הבאה שתבחרו «המיקום שלי» תתבקשו לאשר שוב.</li>
+      <li>ניתן גם למחוק נתונים בהסרת התוסף או בניקוי נתוני התוסף בדפדפן.</li>
+      <li>בדיקת עדכונים נעשית דרך מנגנון העדכון המובנה של Chrome מול חנות Chrome. התוסף לא שולח בבדיקה הזו מידע נוסף משלו.</li>
+    </ul>
+
+    <h2>אפליקציית Android</h2>
+    <ul>
+      <li><strong>מיקום</strong> — משתמשת בהרשאת המיקום של Android, בחזית בלבד, ומבקשת אותה ברגע השימוש (אחרי «המיקום שלי» והסכמה באפליקציה). אין מיקום ברקע.</li>
+      <li><strong>אחסון</strong> — הנתונים נשמרים באחסון המקומי של האפליקציה במכשיר בלבד. גיבוי האפליקציה כבוי (<code>allowBackup=false</code>), ולכן הנתונים אינם מגובים ל־Google.</li>
+      <li><strong>ייצוא</strong> — נעשה דרך דיאלוג «שמירה בשם» של המערכת; הקובץ נשמר רק במקום שתבחרו.</li>
+      <li><strong>קישורים חיצוניים</strong> — נפתחים בדפדפן (HTTPS בלבד).</li>
+      <li><strong>מחיקת נתונים</strong> — בהגדרות באפליקציה ← ניהול נתונים; או בהגדרות Android ← אפליקציות ← ניקוי אחסון; או בהסרת ההתקנה.</li>
+    </ul>
+
+    <h2>רישוי נתוני מזג אוויר</h2>
+    <p>
+      נתוני Open-Meteo זמינים תחת רישיון
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+      נדרש ייחוס למקור.
+    </p>
+
+    <h2>יצירת קשר</h2>
+    <p>
+      לשאלות בנושא פרטיות:
+      <a href="mailto:kiai66@gmail.com">kiai66@gmail.com</a>
+    </p>
+
+    <div class="warn">
+      ההתאמה לטיסה בתוסף ובאפליקציה היא הערכה אוטומטית לפי ספים שהמשתמש קובע, ואינה ייעוץ טיסה. ההחלטה אם לטוס היא של הטייס, לפי התנאים בשטח, כללי המנחת והתקנות.
+    </div>
+
+    <div class="note">
+      מדיניות זו עודכנה בגרסה 2.3.0 כדי לכסות את התוסף והאפליקציה יחד, כולל אחסון מקומי באנדרואיד, ייצוא ומחיקת נתונים.
+    </div>
+  </div>
+</body>
+</html>
